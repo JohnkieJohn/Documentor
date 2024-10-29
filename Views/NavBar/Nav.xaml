@@ -1,0 +1,52 @@
+﻿<Page x:Class="Documentor.Views.Nav"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Documentor.Views"
+      mc:Ignorable="d" 
+      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+      Title="Nav">
+
+    <Grid VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" 
+                Width="Auto" 
+                Content="Accueil" 
+                Command="{Binding ViewCommand}" 
+                CommandParameter="Index" Style="{StaticResource NavButtons}"/>
+        <Button Grid.Row="1" 
+                Width="Auto" 
+                Content="Templates" 
+                Command="{Binding ViewCommand}" 
+                CommandParameter="Templates" 
+                Style="{StaticResource NavButtons}"/>
+        <Button Grid.Row="2" 
+                Width="Auto" 
+                Content="Page modèles" 
+                Command="{Binding ViewCommand}" 
+                CommandParameter="PageModels" 
+                Style="{StaticResource NavButtons}"/>
+        <Button Grid.Row="3" 
+                Width="Auto" 
+                Content="Créer un pdf" 
+                Command="{Binding ViewCommand}" 
+                CommandParameter="Pdf" 
+                Style="{StaticResource NavButtons}"/>
+        <Button Grid.Row="4" 
+                Width="Auto" 
+                Content="&#xF3B1;" 
+                FontFamily="Segoe MDL2 Assets" 
+                Foreground="DarkRed"
+                FontWeight="ExtraBold"
+                Command="{Binding ViewCommand}" 
+                CommandParameter="CloseApp" 
+                Style="{StaticResource NavButtons}"/>
+    </Grid>
+</Page>

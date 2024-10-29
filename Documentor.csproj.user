@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\DocumentInsight.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Properties.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\TemplateDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Index.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NavBar\Nav.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PageModel\PageModels.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Document\Pdf.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Document\Templates.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DetailsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\RectangleIsOver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\DocumentInsight.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Properties.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\TemplateDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Index.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NavBar\Nav.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PageModel\PageModels.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Document\Pdf.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\NavButtons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Document\Templates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

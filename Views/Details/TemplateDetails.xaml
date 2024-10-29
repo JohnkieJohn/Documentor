@@ -1,0 +1,58 @@
+﻿<Page x:Class="Documentor.Views.Details.TemplateDetails"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Documentor.Views.Details"
+      mc:Ignorable="d" 
+      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+      Background="#FFD1D0D9"
+      Title="Détails">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" ToolTip="Ajouter un bloc de texte" Content="&#xF714;" FontSize="30" FontFamily="Segoe MDL2 Assets" Style="{StaticResource NavButtons}" Command="{Binding AddRichTextBox}" ></Button>
+        <Button Grid.Row="1" Margin="0, 50, 0, 50" ToolTip="Supprimer élément(s) sélectionné(s)" Content="&#xF78A;" FontSize="20" FontFamily="Segoe MDL2 Assets" FontWeight="ExtraBold" Style="{StaticResource NavButtons}" Command="{Binding Delete}" ></Button>
+        <Button Grid.Row="2" ToolTip="Sauvegarder" Content="&#xE78C;" FontSize="30" FontFamily="Segoe MDL2 Assets" Style="{StaticResource NavButtons}" Command="{Binding Save}" ></Button>
+        <Button Grid.Row="3" FontSize="20" Margin="0, 50, 0, 0" Style="{StaticResource NavButtons}">
+            <TextBlock>
+                <Run Text="&#xE78C;" FontFamily="Segoe MDL2 Assets"></Run>
+                <Run Text="&#xF3B1;" FontFamily="Segoe MDL2 Assets"></Run>
+            </TextBlock>
+        </Button>
+        <Button Grid.Row="4"
+                FontFamily="Segoe MDL2 Assets"
+                Content="&#xE761;"
+                FontSize="30"
+                Style="{StaticResource NavButtons}"
+                Command="{Binding Next}"/>
+        <Button Grid.Row="5"
+                FontFamily="Segoe MDL2 Assets"
+                Content="&#xE760;"
+                FontSize="30"
+                Style="{StaticResource NavButtons}"
+                Command="{Binding Previous}"/>
+        <Button Grid.Row="6"
+                FontFamily="Segoe MDL2 Assets"
+                Content="&#xF56E;"
+                Foreground="DarkGreen"
+                Style="{StaticResource NavButtons}"
+                Command="{Binding AddPage}"/>
+        <Button Grid.Row="7"
+                FontFamily="Segoe MDL2 Assets"
+                Content="&#xF56E;"
+                Foreground="DarkRed"
+                Style="{StaticResource NavButtons}"
+                Command="{Binding DeletePage}"/>
+    </Grid>
+    
+</Page>
